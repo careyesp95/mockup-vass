@@ -1,0 +1,15 @@
+.img-background{
+  height: 75vh;
+  width:100vw;
+  position: relative;
+}
+
+.nav-talento{
+  color:rgb(0, 195, 255);
+  margin-left: 40px;
+}
+
+.img-icon{
+  margin-right: 220px;
+  width: 70px;
+}

@@ -1,0 +1,27 @@
+.section-container{
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.section-img{
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    z-index: -1;
+}
+
+.section-contact{
+    position: absolute;
+    top: 79%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin:14px 0px 15px;
+    font-weight: 700;
+    opacity: 0.5;
+}

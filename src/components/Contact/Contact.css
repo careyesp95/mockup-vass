@@ -1,0 +1,141 @@
+.container-main-contact-desktop{
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+    align-items: center;
+    margin:0 auto;
+}
+
+.container-form{
+    width:90%;
+    max-width:1000px;
+    margin:1.6em auto;
+
+    display:grid;
+    gap:1.6em;
+    grid-template-columns: repeat(6,1fr);
+
+}
+
+.container-form .content-first-part{
+    grid-column: span 3;
+}
+
+
+.container-form .content-second-part{
+    grid-column: span 3;
+}
+
+
+.form-name-contact{
+    margin-top:70px;
+    background-color: transparent;
+    width: 0 auto;
+}
+
+.form-name-contact input{
+    width:30vw;
+    border:none;
+    border-bottom: 1px solid rgba(247, 248, 249,0.3);
+    color:white !important;
+}
+
+.form-name-contact input::placeholder{
+    color:white;
+}
+
+.form-email-contact{
+    margin-top:70px;
+    background-color: transparent;
+    width: 0 auto;
+}
+
+.form-email-contact  input{
+    width:30vw;
+    border:none;
+    border-bottom: 1px solid rgba(247, 248, 249,0.3);
+    color:rgb(247, 248, 249) !important;
+}
+
+.form-email-contact input::placeholder{
+    color:white;
+}
+
+.form-empresa-contact{
+    margin-top:70px;
+    background-color: transparent;
+    width: 0 auto;
+}
+
+.form-empresa-contact  input{
+    width:30vw;
+    border:none;
+    border-bottom: 1px solid rgba(247, 248, 249,0.3);
+    color:rgb(247, 248, 249) !important;
+}
+
+.form-empresa-contact input::placeholder{
+    color:white;
+}
+
+.form-pais-contact{
+    margin-top:70px;
+    background-color: transparent;
+    width: 0 auto;
+}
+
+.form-pais-contact  input{
+    width:30vw;
+    border:none;
+    border-bottom: 1px solid rgba(247, 248, 249,0.3);
+    color:rgb(247, 248, 249) !important;
+}
+
+.form-pais-contact input::placeholder{
+    color:white;
+}
+
+.form-telefono-contact{
+    margin-top:70px;
+    background-color: transparent;
+    width: 0 auto;
+}
+
+.form-telefono-contact input{
+    width:30vw;
+    border:none;
+    border-bottom: 1px solid rgba(247, 248, 249,0.3);
+    color:rgb(247, 248, 249) !important;
+}
+
+.form-telefono-contact input::placeholder{
+    color:white;
+}
+
+
+.form-textarea-contact{
+    margin-top:70px;
+    max-width:30vw;
+    color:white;
+    background-color: transparent;
+    width: 0 auto;
+}
+
+.form-textarea-contact  textarea{
+    border:2px solid rgba(121, 120, 120, 0.58);
+}
+
+
+.form-button-contact{
+    top:140px;
+    left: 60%;
+    justify-content: center;
+    text-decoration: none;
+    border:1px solid white;
+    cursor: pointer;
+}
+
+.form-button-contact:hover{
+    background: rgba(255, 255, 255, 0.034) !important;
+    color:white;
+}
