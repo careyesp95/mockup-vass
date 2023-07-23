@@ -62,7 +62,7 @@ const Contact = () => {
     <main  className="container-main-contact-desktop">
         <form ref={form} onSubmit={sendEmail}>
             <main className='container-form'>
-                <asection className='content-first-part'>
+                <section className='content-first-part'>
                     <FormControl className='form-name-contact'  isInvalid={formik.errors.user_name && formik.touched.user_name}>
                         <Input
                         id="user_name"
@@ -106,8 +106,8 @@ const Contact = () => {
                         />
                         {FormControl.isInvalid !== false && <FormErrorMessage>{formik.errors.pais}</FormErrorMessage>}
                     </FormControl>
-                </asection>
-                <asection className='content-second-part'>
+                </section>
+                <section className='content-second-part'>
                     <FormControl className='form-telefono-contact' isInvalid={formik.errors.empresa && formik.touched.empresa}>
                         <Input 
                         id="telefono"
@@ -133,7 +133,7 @@ const Contact = () => {
                     <Button color='white' background='transparent' borderRadius='50%' height='100px' width='100px' className='form-button-contact' type="submit"  isLoading={isLoading}>
                         Enviar
                     </Button>
-                </asection>
+                </section>
             </main>
           </form>
     </main>

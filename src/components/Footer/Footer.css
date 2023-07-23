@@ -211,4 +211,164 @@ p{
 .brand{
     padding:10px;
 }
+/*Mobile default*/
 
+
+@media(max-width:390px){
+    .container
+    .section-top-part
+    .img-icon{
+        display: none;
+    }
+
+    .container
+    .section-middle-part-four
+    .img-icon-target{
+        display: none;
+    }
+
+}
+
+
+/* Mobile < 768 px*/
+
+@media only screen and (min-width: 350px) and (max-width: 768px){
+    .container{
+        height: 100vh;
+    }
+    .container
+    .section-top-part{
+        grid-column: span 6;
+    }
+
+    .container
+    .section-top-part
+    .section-column-one
+    .section-top-column-one-h3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 10px;
+
+    }
+
+    .container
+    .section-middle-part{
+        grid-column: span 4;
+    }
+
+    .container
+    .section-middle-part
+    .section-column-two
+    p{
+        max-width: 100%;
+    }
+
+    .container
+    .section-bottom-part
+    {
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+    }
+
+    .container
+    .section-bottom-part
+    .section-bottom-copyright
+    p{
+        width: 80%;
+        margin-left:40px;
+        top: 20px;
+        padding: 10px;
+    }
+
+    .container
+    .section-bottom-part
+    .section-bottom-politics{
+        
+        width: 80%;
+        margin-left: 40px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .container
+    .section-bottom-part
+    .section-bottom-politics
+    p{
+        text-align: center;
+    }
+
+    .container
+    .section-bottom-part
+    .section-bottom-socila-media{
+        width: 40%;
+        margin-left: 120px;
+        margin-top: 40px;
+        padding: 10px;
+        left:0;
+        justify-content: end;
+    }
+
+    .container
+    .section-top-part
+    .img-icon{
+        display: none;
+    }
+
+    .container
+    .section-middle-part-four
+    .img-icon-target{
+        display: none;
+    }
+
+    .container
+    .section-middle-part-four{
+        margin-top: 300%;
+        padding-right: 10px;
+
+    }
+    .container
+    .section-middle-part-free{
+        display: none;
+    }
+}
+
+/* Mobile > 768px < 1440px */
+
+@media only screen and (min-width: 768px) and (max-width: 1440px){
+    .container
+    .section-bottom-part{
+        height: 30vh;
+    }
+
+    .container
+    .section-bottom-part
+    .section-bottom-copyright
+    p{
+        width: 70%;
+        margin-left:200px;
+        top: 2px;
+        padding: 10px;
+
+    }
+
+    .container
+    .section-bottom-part
+    .section-bottom-politics
+    p{
+        text-align: center;
+    }
+
+    .container
+    .section-bottom-part
+    .section-bottom-socila-media{
+        width: 40%;
+        margin-left: 180px;
+        margin-top: 30px;
+        padding: 0;
+        left:0;
+        justify-content: end;
+    }
+
+}

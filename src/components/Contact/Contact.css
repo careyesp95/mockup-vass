@@ -6,7 +6,7 @@
     margin:0 auto;
 }
 
-.container-form{
+.container-form {
     width:90%;
     max-width:1000px;
     margin:1.6em auto;
@@ -139,3 +139,128 @@
     background: rgba(255, 255, 255, 0.034) !important;
     color:white;
 }
+
+
+/* Mobile */
+
+/* Mobile < 768 px*/
+
+@media only screen and (min-width: 350px) and (max-width: 768px){
+    .container-main-contact-desktop{
+        width: 100vw;
+        height: 100vh;
+        background-color:black;
+        align-items: center;
+        margin:0 auto;
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-main-contact-desktop
+    .container-form
+    .content-first-part
+    input{
+        width: 80vw;
+    }
+
+    .container-main-contact-desktop
+    .container-form
+    .content-second-part
+    input{
+        width: 80vw;
+    }
+
+    .form-name-contact{
+        margin-top:20px;
+    }
+
+    .form-email-contact{
+        margin-top:20px;
+    }
+
+    .form-empresa-contact {
+        margin-top:20px;
+    }
+
+    .form-pais-contact{
+        margin-top:20px;
+    }
+
+    .form-telefono-contact{
+        margin-top:20px;
+    }
+
+    .form-textarea-contact{
+        margin-top:20px;
+        max-width:80vw;
+    }
+
+    .form-button-contact{
+        top:20px;
+    }
+}
+
+/* Mobile > 768px < 1440px */
+
+@media only screen and (min-width: 768px) and (max-width: 1440px){
+    .container-main-contact-desktop{
+        width: 100vw;
+        height: 100vh;
+        background-color:black;
+        align-items: center;
+        margin:0 auto;
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-main-contact-desktop
+    .container-form
+    .content-first-part
+    input{
+        width: 80vw;
+    }
+
+    .container-main-contact-desktop
+    .container-form
+    .content-second-part
+    input{
+        width: 80vw;
+    }
+
+    .form-name-contact{
+        margin-top:20px;
+    }
+
+    .form-email-contact{
+        margin-top:20px;
+    }
+
+    .form-empresa-contact {
+        margin-top:20px;
+    }
+
+    .form-pais-contact{
+        margin-top:20px;
+    }
+
+    .form-telefono-contact{
+        margin-top:20px;
+    }
+
+    .form-textarea-contact{
+        margin-top:20px;
+        max-width:80vw;
+    }
+
+    .form-button-contact{
+        top:20px;
+    }
+}
+
+

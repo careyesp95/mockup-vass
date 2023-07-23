@@ -7,10 +7,11 @@
 }
 .section-img{
     height: 75vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
     background-size: cover;
     z-index: -1;
+
 }
 
 .section-contact{
@@ -25,3 +26,63 @@
     font-weight: 700;
     opacity: 0.5;
 }
+
+
+/* Mobile */
+
+/* Mobile < 768 px*/
+
+@media only screen and (min-width: 350px) and (max-width: 768px){
+    .section-img{
+        height: 75vh;
+        width: 100vw;
+        position: relative;
+        z-index: -1;
+
+        background-size: cover;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    .section-contact{
+        position: absolute;
+        top: 79%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 60px;
+        font-family: sans-serif;
+        margin:14px 0px 15px;
+        font-weight: 700;
+        opacity: 0.5;
+    }
+}
+
+/* Mobile > 768px < 1440px */
+
+@media only screen and (min-width: 768px) and (max-width: 1440px){
+    .section-img{
+        height: 75vh;
+        width: 100vw;
+        position: relative;
+        z-index: -1;
+        
+        object-fit: cover;
+    }
+
+    .section-contact{
+        position: absolute;
+        top: 79%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 130px;
+        font-family: sans-serif;
+        margin:14px 0px 15px;
+        font-weight: 700;
+        opacity: 0.5;
+    }
+
+}
+
+

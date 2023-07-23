@@ -8,41 +8,40 @@ function Footer (){
 
     return (
         <footer className='container'>
-            <section className='section-top-part'>
-                <div className='section-column-one'>
-                    <div className='section-top-column-one-h3'>
-                        <h3>Complex</h3>
-                        <h3>made</h3>
-                        <h3>simple</h3>
+                <section className='section-top-part'>
+                    <div className='section-column-one'>
+                        <div className='section-top-column-one-h3'>
+                            <h3>Complex</h3>
+                            <h3>made</h3>
+                            <h3>simple</h3>
+                        </div>
+                        <img className='img-icon' src='https://vasscompany.com/wp-content/uploads/2020/07/logo-vass-blanco.png' alt='icon' />
                     </div>
-                    <img className='img-icon' src='https://vasscompany.com/wp-content/uploads/2020/07/logo-vass-blanco.png' alt='icon' />
-                </div>
-            </section>
-            <section className='section-middle-part'>
-                <div className='section-column-two'>
-                    <h3>Sitemap VASS</h3>
-                    <p>{PARAFOTWO}</p>
-                </div>
-            </section>
-            <section className='section-middle-part-three'>
-                <div className='section-column-three'>
-                    <h3>Sitemap Talento</h3>
-                    <p>{PARAFOTHREE}</p>
-                </div>
-            </section>
-            <section className='section-middle-part-free'></section>
-            <section className='section-middle-part-four'>
-                <div className='section-column-four'>
-                    <h3>Empresas</h3>
-                    <p>VASS</p>
-                    <p>Nateevo</p>
-                    <p>Serbatic</p>
-                    <p>vdSHOP</p>
-                    <img className='img-icon-target' src='./icon.PNG' alt='icon' />
-                </div>
-            </section>
-                
-            
+                </section>
+                <section className='section-middle-part'>
+                    <div className='section-column-two'>
+                        <h3>Sitemap VASS</h3>
+                        <p>{PARAFOTWO}</p>
+                    </div>
+                </section>
+                <section className='section-middle-part-three'>
+                    <div className='section-column-three'>
+                        <h3>Sitemap Talento</h3>
+                        <p>{PARAFOTHREE}</p>
+                    </div>
+                </section>
+                <section className='section-middle-part-free'></section>
+                <section className='section-middle-part-four'>
+                    <div className='section-column-four'>
+                        <h3>Empresas</h3>
+                        <p>VASS</p>
+                        <p>Nateevo</p>
+                        <p>Serbatic</p>
+                        <p>vdSHOP</p>
+                        <img className='img-icon-target' src='./icon.PNG' alt='icon' />
+                    </div>
+                </section>
+
             <section className='section-bottom-part'>
                 <div className='section-bottom-copyright'>
                     <p> Copyright © 2021 Todos los derechos reservados </p>
