@@ -54,9 +54,15 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if(formik.values.user_name?.length < 1|| formik.values.user_email?.length < 1 || formik.values.empresa?.length < 1 || formik.values.pais?.length < 1 || formik.values.telefono?.length < 1 || formik.values.message?.length < 1){
+      return <p>Faltan campos por llenar</p>;
+    }else if(formik.errors.user_name?.length > 1 || formik.errors.user_email?.length > 1 || formik.errors.empresa?.length > 1 || formik.errors.pais?.length > 1 || formik.errors.telefono?.length > 1 || formik.errors.message?.length > 1){
+      return <p>Campos incorrectos</p>;
+    }
     alert(`Se ha enviado el mensaje con exito, gracias ${formik.values.user_name}`)
     formik.resetForm();
   };
+
 
   return (
     <main  className="container-main-contact-desktop">
@@ -73,7 +79,6 @@ const Contact = () => {
                         />
                         {FormControl.isInvalid !== false && <FormErrorMessage >{formik.errors.user_name}</FormErrorMessage>}
                     </FormControl>
-                    
                     <FormControl className='form-email-contact' isInvalid={formik.errors.user_email && formik.touched.user_email}>
                         <Input 
                         id="user_email"
@@ -130,9 +135,9 @@ const Contact = () => {
                         />
                         {FormControl.isInvalid !== false && <FormErrorMessage>{formik.errors.message}</FormErrorMessage>}
                     </FormControl>
-                    <Button color='white' background='transparent' borderRadius='50%' height='100px' width='100px' className='form-button-contact' type="submit"  isLoading={isLoading}>
-                        Enviar
-                    </Button>
+                      <Button color='white' background='transparent' borderRadius='50%' height='100px' width='100px' className='form-button-contact' type="submit"  isLoading={isLoading}>
+                          Enviar
+                      </Button>
                 </section>
             </main>
           </form>

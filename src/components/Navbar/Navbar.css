@@ -3,105 +3,229 @@
   margin-left: 40px;
 }
 
+.container-mobile{
+  display:block;
+}
+
+.container-mobile-tablet{
+  display:none;
+}
+
+
+#container-navbar {
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      height: 60px;
+      background-color:transparent;
+}
+
 .img-icon{
   margin-right: 220px;
   width: 70px auto;
 }
 
+/* Dropdown Mobile - tablet */
+.container-mobile-tablet
 .dropdown-menu {
   display: none;
-  position: absolute;
-  height: 0;
-  right: 2rem;
-  top:60px;
-  width:300px;
-  background:rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(1px);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.container-mobile-tablet
 .dropdown-menu.open {
   height: 240px;
 }
+.container-mobile-tablet
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:50vw;
+}
 
+
+
+/*
 .container-navbar .toggle-icon{
   color:white;
   font-size: 1.5rem;
   cursor:pointer;
   display: none;
+}*/
+
+/* Pueba Navbar px*/
+
+button {
+  margin-left:10px;
+  display:none;
+  flex-direction: column;
+  width: 4rem;
+  height: 3rem;
+  border: 0;
+  gap: .05rem;
+  cursor: pointer;
 }
+
+
+
+button > div {
+  background: white;
+  margin-top: 9px;
+  height: 2px;
+  width:6vw;
+  border-radius: 5px;
+  transition: all .5s;
+  transform-origin: left;
+}
+button:hover div:first-child{
+  transform: rotate(45deg);
+}
+
+button:hover div:nth-child(2){
+  opacity: 0;
+}
+
+button:hover div:last-child{
+  transform: rotate(-45deg);
+}
+
+
+
 
 
 /* Mobile < 768 px*/
 
 @media only screen and (min-width: 350px) and (max-width: 768px){
-    .container-navbar {
-      display: flex;
+    .container-mobile{
+      display:none;
+    }
+    .img-icon{
+      display:none;
+    }
+
+    .container-mobile-tablet{
+      display:flex;
+      position: fixed;
       align-items: center;
+      top:0;
+      left:0;
       width: 100vw;
       height: 60px;
       background-color:black;
     }
   
-    .container-navbar 
+    .container-mobile-tablet 
     .toggle-icon{
       display:flex;
-      margin-right:20px;
+      flex-direction:row;
+      justify-content:flex-end;
+      width:100%;
+      padding-right: 40px;
+
+      color:white;
+      font-size: 1.5rem;
+      cursor:pointer;
+      margin-right:30px;
     }
   
-    .container-navbar 
+    .container-mobile-tablet 
     .toggle-icon
     .btn-icon{
-      display:block;
-      margin-right:10px;
-      color:white;
-      font-size: 30px;
       padding-left: 10px;
+      color:white;
+      font-size: 2.5rem;
+      cursor:pointer;
     }
-  
+
+    .container-mobile-tablet 
+    .img-icon-mobile{
+      margin-right: 220px;
+      margin-left: 20px;
+      width: 70px auto;
+    }
+
+    /*hasta aca todo bien*/
     .dropdown-menu {
-        display: block;
+      position: absolute;
+      display:block;
+      height: 0;
+      right: 2rem;
+      top:60px;
+      width:700px;
+      background:rgba(16, 15, 15, 0.1);
+      backdrop-filter: blur(1px);
+      transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
+    .dropdown-menu.open {
+      height: 240px;
+    }
+
+    button{
+      display: flex;
+      padding-left: 20px !important;
+  }
+
+
 }
+
+
+
+
+
 
 /* Mobile > 768 px*/
 
 @media only screen and (min-width: 768px) and (max-width: 1440px){
-  .container-navbar {
-    display: flex;
+  .container-mobile{
+    display:none;
+  }
+  .img-icon{
+    display:none;
+  }
+
+  .container-mobile-tablet{
+    display:flex;
+    position: fixed;
     align-items: center;
+    top:0;
+    left:0;
     width: 100vw;
     height: 60px;
     background-color:black;
   }
 
-  .container-navbar 
+  .container-mobile-tablet 
   .toggle-icon{
     display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    width:100%;
+    padding-right: 20px;
+
+    color:white;
+    font-size: 1.5rem;
+    cursor:pointer;
     margin-right:20px;
   }
 
-  .container-navbar 
+  .container-mobile-tablet 
   .toggle-icon
   .btn-icon{
-    display:block;
-    margin-right:10px;
-    color:white;
-    font-size: 30px;
     padding-left: 10px;
+    color:white;
+    font-size: 2.5rem;
+    cursor:pointer;
   }
 
-  .dropdown-menu {
-      display: block;
-  }
+  .container-mobile-tablet 
+    .img-icon-mobile{
+      margin-right: 220px;
+      margin-left: 20px;
+      width: 70px auto;
+    }
 
-  .navbar 
-  .navbar-expand-lg 
-  .p-0 
-  .navbar-dark 
-  .p-md-3{
-    display: none;
-  }
+  
+  /*hasta aca todo bien*/
+ 
 }
