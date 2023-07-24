@@ -6,6 +6,7 @@
     margin:0 auto;
 }
 
+
 .container-form {
     width:90%;
     max-width:1000px;
@@ -143,7 +144,7 @@
 
 /* Mobile */
 
-/* Mobile < 768 px*/
+/*  350px < Mobile < 768px */
 
 @media only screen and (min-width: 350px) and (max-width: 768px){
     .container-main-contact-desktop{
@@ -203,7 +204,7 @@
     }
 }
 
-/* Mobile > 768px < 1440px */
+/*  768px < Mobile < 1440px */
 
 @media only screen and (min-width: 768px) and (max-width: 1440px){
     .container-main-contact-desktop{

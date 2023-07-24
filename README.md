@@ -9,10 +9,11 @@ El boilerplate cuenta con una carpeta: `mockup-vass`. En esta carpeta estará el
 - [ ] Javascript
 - [ ] HTML
 - [ ] CSS
-- [ ] ReactJs
 - [ ] Bootstrap 5
-- [ ] Chackra UI
+- [ ] Chackra UI 
 - [ ] formik
+- [ ] ReactJs
+
 
 ## Comenzando
 

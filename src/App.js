@@ -6,15 +6,16 @@ import Contact from './components/Contact/Contact.js';
 import Navbar from './components/Navbar/Navbar.js';
 import Footer from './components/Footer/Footer.js';
 
+
 function App() {
   return ( 
     <ChakraProvider>
       <AlertProvider>
         <main>
           <Navbar/>
-          <LandingPage/>
-          <Contact/>
-          <Footer/>
+          <LandingPage />
+          <Contact />
+          <Footer />
         </main>
       </AlertProvider>
     </ChakraProvider> 

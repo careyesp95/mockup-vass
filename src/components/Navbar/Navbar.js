@@ -1,11 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import { FaSistrix } from 'react-icons/fa';
-import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Box } from "@chakra-ui/react";
+import { FaSistrix } from 'react-icons/fa';
 import './Navbar.css';
-
-
 
 function Navbar (){
   const outerBox = useRef();
@@ -37,20 +33,7 @@ function Navbar (){
     )
   }, []);
 
-  function handleClick(anchor){
-    console.log(anchor)
-    const id = `#${anchor}`;
-    const element = document.getElementById(id);
-    if(element){
-      element.scrollIntoView({
-        behavior:"smooth",
-        block:"start"
-      })
-    }
-  }
-
   function onMenuDropdown(){
-    console.log('click')
     const dropdownMenu = document.querySelector('.dropdown-menu')
     dropdownMenu.classList.toggle('open')
   }
@@ -66,13 +49,37 @@ function Navbar (){
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
       ref={outerBox}
-  >
-    <>
-     {/*navbar navbar-expand-lg navbar-dark bg-dark d-block d-sm-block d-md-block d-lg-none menu-mobile-vass"
-      container-navbar navbar p-0 p-md-3*/
       
-     }
-       <nav id='container-navbar' className="container-mobile  navbar navbar-expand-lg  navbar-dark  p-0 p-md-3">
+    >
+      <>
+      
+        <nav className='container-nav'>
+          <img className='img-icon-mobile' src='https://vasscompany.com/wp-content/uploads/2020/07/logo-vass-blanco.png' alt='icon' />
+          <div className='toggle-icon'>
+                <FaSistrix size="30px" right="10px"/>
+                <button
+                  className='button-navbar'
+                  onClick={onMenuDropdown}
+                >
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+            </div>
+            <menu className='dropdown-menu'>
+                <li><a  className='item-en'href='/#en'>EN</a></li>
+                <li><a  href='/#Home' >Home </a></li>
+                <li><a  href='/#exito' >Casos de éxito </a></li>
+                <label className='label-select'>Mercados<select  href='/#mercados'></select></label>
+                <label className='label-select'>Cómo lo hacemos<select   href='/#comoLoHacemos'></select></label>
+                <label className='label-select'>Somos VASS<select   href='/#somosVass'></select></label>
+                <li><a   href='/#contato'>Contacto</a></li>
+                <li><a   href='/#insights'>Insights</a></li>
+                <li><a   href='/#research'>VASS Research</a></li>
+                <li><a   href='/#talento'>Talento</a></li>
+            </menu>
+        </nav>
+        <nav id='container-navbar' className="container-mobile  navbar navbar-expand-lg  navbar-dark  p-0 p-md-3">
         <div className="container-fluid">
           <img className='img-icon' src='https://vasscompany.com/wp-content/uploads/2020/07/logo-vass-blanco.png' alt='icon' />
           <div className="collapse navbar-collapse" >
@@ -114,28 +121,8 @@ function Navbar (){
           </div>
          </div>
         </nav>
-        <nav className='container-mobile-tablet'>
-          <img className='img-icon-mobile' src='https://vasscompany.com/wp-content/uploads/2020/07/logo-vass-blanco.png' alt='icon' />
-          <div className='toggle-icon'>
-              <FaSistrix size="30px" right="10px"/>
-              <button
-                onClick={onMenuDropdown}
-              >
-                <div></div>
-                <div></div>
-                <div></div>
-              </button>
-              {/*<button onClick={onMenuDropdown} >
-                <FontAwesomeIcon className='btn-icon' icon={faBars} />
-    </button>*/}
-          </div>
-          <div className='dropdown-menu'>
-                <li><a href='/#exito' onClick={handleClick}>Casos de éxito</a></li>
-          </div>
-        </nav>
-    </>
-    
-  </Box>
+      </>
+    </Box>
   )
 }
 

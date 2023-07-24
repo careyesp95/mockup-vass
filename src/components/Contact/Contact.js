@@ -56,11 +56,10 @@ const Contact = () => {
     e.preventDefault();
     if(formik.values.user_name?.length < 1|| formik.values.user_email?.length < 1 || formik.values.empresa?.length < 1 || formik.values.pais?.length < 1 || formik.values.telefono?.length < 1 || formik.values.message?.length < 1){
       return <p>Faltan campos por llenar</p>;
-    }else if(formik.errors.user_name?.length > 1 || formik.errors.user_email?.length > 1 || formik.errors.empresa?.length > 1 || formik.errors.pais?.length > 1 || formik.errors.telefono?.length > 1 || formik.errors.message?.length > 1){
-      return <p>Campos incorrectos</p>;
+    
     }
-    alert(`Se ha enviado el mensaje con exito, gracias ${formik.values.user_name}`)
-    formik.resetForm();
+      alert(`Se ha enviado el mensaje con exito, gracias ${formik.values.user_name}`)
+      formik.resetForm();
   };
 
 
